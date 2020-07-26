@@ -9,7 +9,7 @@ const server = require('http').Server(app); // Habilitando conexões http
 const io = require('socket.io')(server); // Habilitando conexões websocket
 
 // Conectando com o banco (week7:week7) User/password
-mongoose.connect('mongodb+srv://week7:week7@cluster0-bakma.mongodb.net/test?retryWrites=true&w=majority', {
+mongoose.connect('colocar enderço do mongo', {
   useNewUrlParser: true,
 });
 

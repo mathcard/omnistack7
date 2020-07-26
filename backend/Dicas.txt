@@ -1,0 +1,57 @@
+﻿Parei video 2,  minutos 46:40
+Configurando o PostController
+
+- Inicindo projeto
+yarn init -y
+
+- Express (Servidor Web)
+yarn add express
+
+ - Iniciando servidor
+node src/index.js
+
+- NODEMON - Cria scripts no arquivo package.json para usar no desenvolvedor
+Neste caso para que o servidor reinicie após alteração, basta chamar o script com yarn dev
+Instalação:
+yarn add nodemon
+
+
+MONGOOSE
+Instalação: yarn add mongoose
+Usuário: week7/week7
+Network Access: Permite todos
+
+
+
+MULTER - Automatiza processo de upload
+instalação: yarn add multer
+
+SHARP - Redimensionamento de imagens
+instalação: yarn add sharp
+
+CORS - Permite que todo tipo de app acesse o backend
+instalação: yarn add cors
+
+SOCKET.IO - Permitinado que aplicação ouça protocolo websocket
+instalação: yarn add socket.io
+
+
+
+
+
+
+
+
+
+
+
+
+Erro no run-android: Alterar uma variavel em node_modules/metro-config/src/defaults/blacklist.js
+---------------------------------------------------------------------------------
+var sharedBlacklist = [
+  /node_modules[\/\\]react[\/\\]dist[\/\\].*/,
+  /website\/node_modules\/.*/,
+  /heapCapture\/bundle\.js/,
+  /.*\/__tests__\/.*/
+];
+---------------------------------------------------------------------------------

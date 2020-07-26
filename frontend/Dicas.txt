@@ -1,0 +1,16 @@
+﻿Necessario alterar o ip nos arquivos sercices.js e feed.js
+
+- Criando projeto frontend
+yarn create react-app frontend
+
+- Iniciando 
+yarn start
+
+- ROTAS
+instalação: yarn add react-router-dom
+
+- AXIOS - Requisição ajax, utilizado no services
+instalação: yarn add axios
+
+- SOCKET.IO - Frontend real time
+yarn add socket.io-client

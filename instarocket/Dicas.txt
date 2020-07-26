@@ -1,0 +1,57 @@
+﻿Necessario alterar o ip nos arquivos sercices.js e feed.js
+
+- Instalando pacotes com o projeto em outra maquina
+npm install
+
+- Criando projeto - CREATE PROJECT
+react-native init instarocket
+
+- Iniciando projeto
+react-native run-android
+Para escolhor o emulador: --simulator "nome do simulador"
+
+- Reiniciando o app
+react-native start
+react-native start --reset-cache
+
+- REACT NAVIGATION - Instalação problematica
+Instalação: yarn add react-navigation 
+Instalação: yarn add react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context
+
+
+Adicionar em: android/app/build.gradle
+implementation 'androidx.appcompat:appcompat:1.1.0-rc01'
+implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-alpha02'
+
+Instalação: yarn add @react-native-community/masked-view
+Instalação: yarn add react-native-stack
+Confere o blacklist
+Resetar cache: react-native start --reset-cache
+
+AXIOS - requisição para api
+instalação: yarn add axios
+
+SOCKET.IO -  Colocando em Real Time
+instalação: yarn add socket.io-client
+
+IMAGE PICKER - Utilizando a camera (install on github)
+instalação: yarn add react-native-image-picker
+
+Editar codigos: IOS: Info.plist
+ANDROID: android/app/src/main/AndroidManifest.xml
+<uses-permission android:name="android.permission.CAMERA" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+
+OCULTANDO WARNINGS - Exemplos no arquivo index.js
+
+Erro no run-android: Alterar uma variavel em node_modules/metro-config/src/defaults/blacklist.js
+---------------------------------------------------------------------------------
+var sharedBlacklist = [
+  /node_modules[\/\\]react[\/\\]dist[\/\\].*/,
+  /website\/node_modules\/.*/,
+  /heapCapture\/bundle\.js/,
+  /.*\/__tests__\/.*/
+];
+---------------------------------------------------------------------------------
+
